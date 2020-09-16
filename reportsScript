@@ -1,0 +1,55 @@
+function addTrip()
+{
+  sessionStorage.setItem("type", "news")
+  window.location = "edit.html";
+}
+
+function findTripReports()
+{
+  var db = firebase.firestore();
+  db.collection("reports")
+  .orderBy("added", "desc").limit(20)
+  .get()
+  .then(function(querySnapshot) {
+      querySnapshot.forEach(function(doc) {
+        displayTrips(doc.data().title, doc.data().content,
+        doc.data().price, doc.data().date, doc.data().location)
+      })
+    })
+}
+
+function displayReport(title, content, price, date, location)
+{
+  var tripsDiv = document.createElement('div');
+
+  tripsDiv.className = 'card cardStyle';
+
+  var tripsTitle = document.createElement('h2');
+  tripsTitle.className = "title";
+  tripsTitle.textContent = title;
+  tripsDiv.appendChild(tripsTitle);
+
+  var tripSubTitle = document.createElement('h3');
+  tripSubTitle.className = "title";
+  tripSubTitle.textContent = "Starts on: " + date + " Price: " + price;
+  tripsDiv.appendChild(tripSubTitle);
+
+  var tripLocation = document.createElement('h4');
+  tripLocation.className = "title";
+  tripLocation.textContent = "Location: " + location;
+  tripsDiv.appendChild(tripLocation);
+
+  var tripContent = document.createElement('p');
+  tripContent.className = "message";
+  tripContent.textContent = content;
+  tripsDiv.appendChild(tripContent);
+
+  var tripPurchaseBTN = document.createElement('button');
+  tripPurchaseBTN.className = "btn btn-primary";
+  tripPurchaseBTN.textContent = "Purchase";
+  tripPurchaseBTN.setAttribute('onclick', "location.href='https://www.su.nottingham.ac.uk/sports/sport/Caving/';");
+  tripsDiv.appendChild(tripPurchaseBTN);
+
+  var element = document.getElementById('tripsContainer');
+  element.appendChild(tripsDiv);
+}

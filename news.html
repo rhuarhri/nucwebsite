@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--<link rel="icon" href="nucLogoSmall.png" type="image/png" sizes="16x16">-->
+<title>Nottingham University Caving Club </title>
+<meta name="keywords" content="Nottingham, University, Caving, Club, Underground, Exploration, Student, Union">
+<meta name="description" content="Welcome to the website of NUCC, the University of Nottingham Caving Club. We are a medium-sized, non-elitist friendly club where new members are always welcome.">
+<!-- Bootstrap setup -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-wid.th, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- END -->
+
+<link  rel="stylesheet" type="text/css" href = "masterStyle.css">
+<link rel="stylesheet" type="text/css" href="newsStyle.css">
+
+<!--firebase-->
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-storage.js"></script>
+<script src="newScript.js"></script>
+
+</head>
+
+<body>
+
+<nav class = "navbar navbar-fixed-top navigation">
+	<div class = "container-fluid">
+	<h1 class = "Title bigTitle">Nottingham University Caving Club</h1>
+	<h1 class = "Title smallTitle">NUCC</h1>
+		<div class="navbar-header">
+			<button type = "button" class = "navbar-toggle buttonStyle" data-toggle = "collapse" data-target = "#siteMenu">
+				<span class="icon-bar menubar"></span>
+				<span class="icon-bar menubar"></span>
+				<span class="icon-bar menubar"></span>
+			</button>
+
+		</div>
+		<div class = "collapse navbar-collapse" id = "siteMenu">
+			<div class = "collapse navbar-collapse" id = "siteMenu">
+				<ul class = "nav navbar-nav">
+					<li> <a href = "index.html" title= "Home" accesskey="1"> Home </a></li>
+					<li> <a href = "news.html"title= "Events" accesskey="3"> News </a></li>
+					<li> <a href = "https://www.facebook.com/uoncaving/photos/"title= "Photo gallery" accesskey="6"> Photo gallery </a></li>
+					<li> <a href = "calendar.html"title= "Calendar" accesskey="9">Calendar</a></li>
+					<li> <a href = "reports.html"title="Trip Reports" accesskey="4">Trip Reports</a></li>
+					<li> <a href = "contact.html"title= "Contact" accesskey="7"> Contact </a></li>
+					 <!--general contact page-->
+				</ul>
+
+		</div>
+	</div>
+</nav>
+
+<div id = "newsContainer" class = "container-fluid marginForTopDiv newsDiv">
+	<h2 class = "Title TitleBackground">News</h2>
+	<a id = "addNewsBTN" onclick="saveNews()" class="btn btn-info btn-lg buttonStyle" role="button" >
+	<i class="fa fa-plus"></i>
+	</a>
+
+
+</div>
+
+<div id = "eventsContainer" class = "container-fluid eventsDiv">
+	<h2 class = "Title TitleBackground">Events</h2>
+	<a id = "addEventBTN" onclick="saveEvent()" class="btn btn-info btn-lg buttonStyle" role="button" >
+	<i class="fa fa-plus"></i>
+	</a>
+
+</div>
+
+<div id = "tripsContainer" class = "container-fluid tripsDiv">
+	<h2 class = "Title TitleBackground">Trips</h2>
+	<a id = "addTripBTN" onclick="saveTrip()" class="btn btn-info btn-lg buttonStyle" role="button" >
+	<i class="fa fa-plus"></i>
+	</a>
+
+</div>
+
+</body>
+
+<footer class= "footer">
+<p>Property of Nottingham University Caving Club</p>
+
+</footer>

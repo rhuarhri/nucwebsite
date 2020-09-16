@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--<link rel="icon" href="nucLogoSmall.png" type="image/png" sizes="16x16">-->
+<title>Nottingham University Caving Club </title>
+<meta name="keywords" content="Nottingham, University, Caving, Club, Underground, Exploration, Student, Union">
+<meta name="description" content="Welcome to the website of NUCC, the University of Nottingham Caving Club. We are a medium-sized, non-elitist friendly club where new members are always welcome.">
+<!-- Bootstrap setup -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-wid.th, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- END -->
+
+<link rel="stylesheet" type="text/css" href = "masterStyle.css">
+<link rel="stylesheet" type="text/css" href="editStyle.css">
+
+<!--firebase-->
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-storage.js"></script>
+
+
+</head>
+
+<body>
+
+<nav class = "navbar navbar-fixed-top navigation">
+	<div class = "container-fluid">
+	<h1 class = "Title bigTitle">Nottingham University Caving Club</h1>
+	<h1 class = "Title smallTitle">NUCC</h1>
+		<div class="navbar-header">
+			<button type = "button" class = "navbar-toggle buttonStyle" data-toggle = "collapse" data-target = "#siteMenu">
+				<span class="icon-bar menubar"></span>
+				<span class="icon-bar menubar"></span>
+				<span class="icon-bar menubar"></span>
+			</button>
+
+		</div>
+		<div class = "collapse navbar-collapse" id = "siteMenu">
+			<ul class = "nav navbar-nav">
+				<li> <a href = "index.html" title= "Home" accesskey="1"> Home </a></li>
+				<li> <a href = "events.html"title= "Events" accesskey="3"> Events </a></li>
+				<li> <a href = "trips.html"title= "Trips" accesskey="5"> Trips </a></li>
+				<li> <a href = "https://www.facebook.com/uoncaving/photos/"title= "Photo gallery" accesskey="6"> Photo gallery </a></li>
+				<!-- use the photo gallery-->
+				<li> <a href = "members.html"title= "Club Members" accesskey="8"> Club Members </a></li>
+				<!-- This page show a fresher some active club members which means that when they go to a club event they can recognise someone-->
+				<li> <a href = "contact.html"title= "Contact" accesskey="7"> Contact </a></li>
+				<!-- general contact page-->
+			</ul>
+
+		</div>
+	</div>
+</nav>
+
+<div class = "container-fluid background marginForTopDiv">
+	<h2 class = "Title">Update committee member information</h2>
+	<div class="dropdown inputElementStyle">
+								 <button class="btn btn-default dropdown-toggle" style="background-color:#ffffff" type="button" data-toggle="dropdown">
+										 Options
+										 <span class="caret"></span>
+								 </button>
+								 <ul class="dropdown-menu">
+									 	 <li><a onclick="setType('other')">News</a></li>
+										 <li><a onclick="setType('important')">Event</a></li>
+										 <li><a onclick="setType('work')">Trip</a></li>
+										 <li><a onclick="setType('task')">Trip report</a></li>
+								 </ul>
+	</div>
+
+	<form>
+	  <div class="input-group mb-3 inputElementStyle">
+	    <div class="input-group-prepend">
+	      <span class="input-group-text textStyle">Title</span>
+	    </div>
+	    <input id = "title" type="text" class="form-control" placeholder="Title">
+	  </div>
+	  <div class="input-group mb-3 inputElementStyle">
+	    <div class="input-group-prepend">
+	      <span class="input-group-text textStyle">Content</span>
+	    </div>
+	    <input id = "content" type="text" class="form-control content" placeholder="Content">
+	  </div>
+		<div class="input-group mb-3  inputElementStyle">
+	    <div class="input-group-prepend">
+	      <span class="input-group-text textStyle">Location</span>
+	    </div>
+	    <input id = "location" type="text" class="form-control" placeholder="Location">
+	  </div>
+		<div class="input-group mb-3  inputElementStyle">
+	    <div class="input-group-prepend">
+	      <span class="input-group-text textStyle">Author</span>
+	    </div>
+	    <input id = "author" type="text" class="form-control" placeholder="Author">
+	  </div>
+
+</div>
+
+</body>
+
+<footer class= "footer">
+<p>Property of Nottingham University Caving Club</p>
+
+</footer>

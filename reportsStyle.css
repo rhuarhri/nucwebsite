@@ -1,0 +1,41 @@
+.cardStyle
+{
+	background-color: rgba(255, 255, 255, 0.8);
+  width:90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.TitleBackground
+{
+	background-color: rgba(0, 0, 0, 0.5);
+	text-align: center;
+}
+
+.reportsDiv
+{
+	background-image: url("tripReportsBackground.png");
+	background-size: 100% 100%;
+	height: 600px;
+	overflow-y: auto;
+}
+
+.title
+{
+	color: #000;
+	text-align: center;
+}
+
+.message
+{
+	color: #000;
+	font-size: 18px;
+	text-align: center;
+}
+
+.text
+{
+	color: #000;
+	margin-right: 10px;
+	text-align: center;
+}

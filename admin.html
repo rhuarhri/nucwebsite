@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--<link rel="icon" href="nucLogoSmall.png" type="image/png" sizes="16x16">-->
+<title>Nottingham University Caving Club </title>
+<meta name="keywords" content="Nottingham, University, Caving, Club, Underground, Exploration, Student, Union">
+<meta name="description" content="Welcome to the website of NUCC, the University of Nottingham Caving Club. We are a medium-sized, non-elitist friendly club where new members are always welcome.">
+<!-- Bootstrap setup -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-wid.th, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- END -->
+
+
+<link rel="stylesheet" type="text/css" href = "masterStyle.css">
+<link rel="stylesheet" type="text/css" href = "adminStyle.css">
+
+
+</head>
+
+<body>
+
+<nav class = "navbar navbar-fixed-top navigation">
+	<div class = "container-fluid">
+	<h1 class = "Title bigTitle">Nottingham University Caving Club</h1>
+	<h1 class = "Title smallTitle">NUCC</h1>
+		<div class="navbar-header">
+			<button type = "button" class = "navbar-toggle buttonStyle" data-toggle = "collapse" data-target = "#siteMenu">
+				<span class="icon-bar menubar"></span>
+				<span class="icon-bar menubar"></span>
+				<span class="icon-bar menubar"></span>
+			</button>
+
+		</div>
+		<div class = "collapse navbar-collapse" id = "siteMenu">
+			<ul class = "nav navbar-nav">
+				<li> <a href = "index.html" title= "Home" accesskey="1"> Home </a></li>
+				<li> <a href = "news.html"title= "Events" accesskey="3"> News </a></li>
+				<li> <a href = "trips.html"title= "Trips" accesskey="5"> Trips </a></li>
+				<li> <a href = "https://www.facebook.com/uoncaving/photos/"title= "Photo gallery" accesskey="6"> Photo gallery </a></li>
+				<!-- use the photo gallery-->
+				<li> <a href = "members.html"title= "Club Members" accesskey="8"> Club Members </a></li>
+				<!-- This page show a fresher some active club members which means that when they go to a club event they can recognise someone-->
+				<li> <a href = "contact.html"title= "Contact" accesskey="7"> Contact </a></li>
+				<!-- general contact page-->
+			</ul>
+
+		</div>
+	</div>
+</nav>
+
+<div  class = "container-fluid background marginForTopDiv">
+
+	<div class="col-sm-6">
+		<h2 class="Title loginTitle">Login</h2>
+	</div>
+
+	<div class="col-sm-6">
+		<div class="input-group mb-3 inputElementStyle">
+			<div class="input-group-prepend">
+				<span class="input-group-text textStyle">Email</span>
+			</div>
+			<input id = "content" type="email" class="form-control" placeholder="Email">
+		</div>
+
+		<div class="input-group mb-3 inputElementStyle">
+			<div class="input-group-prepend">
+				<span class="input-group-text textStyle">Password</span>
+			</div>
+			<input id = "content" type="password" class="form-control" placeholder="Password">
+		</div>
+
+		<p></p>
+		<a id="loginBTN" class="btn btn-info btn-lg" role="button" onclick = "login()">Log in</a>
+	</div>
+
+</div>
+
+<div class="col-sm-6" style="background:#ff0000">
+<p>news stories</p>
+</div>
+
+<div class="col-sm-6" style="background:#0000ff">
+<p>trips</p>
+</div>
+
+<div class="col-sm-6" style="background:#ffffff">
+<p>events</p>
+</div>
+
+<div class="col-sm-6" style="background:#ff00ff">
+<p>trip reports</p>
+</div>
+
+<div class="col-sm-6" style="background:#00ff00">
+<p>members</p>
+</div>
+
+</body>
+<footer class= "footer">
+<p>Property of Nottingham University Caving Club</p>
+
+</footer>

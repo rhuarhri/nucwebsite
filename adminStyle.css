@@ -1,0 +1,12 @@
+.loginTitle
+{
+  text-align: right;
+}
+
+@media screen and (max-width: 765px)
+{
+  .loginTitle
+  {
+    text-align: left;
+  }
+}
