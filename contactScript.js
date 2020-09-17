@@ -1,13 +1,13 @@
 var firebaseConfig = {
-    apiKey: "AIzaSyDvIbnsJ9YEEQRWwSA5P5rJ6BrYFJtbMZ0",
-    authDomain: "nucaving-bfeab.firebaseapp.com",
-    databaseURL: "https://nucaving-bfeab.firebaseio.com",
-    projectId: "nucaving-bfeab",
-    storageBucket: "nucaving-bfeab.appspot.com",
-    messagingSenderId: "568731037103",
-    appId: "1:568731037103:web:493a58c7f69c2205e3935a",
-    measurementId: "G-SH0S66B193"
+    apiKey: "AIzaSyDEb8Nyte7l49VcaE8fhOXEoACrhxZwiGQ",
+    authDomain: "nottscaving.firebaseapp.com",
+    databaseURL: "https://nottscaving.firebaseio.com",
+    projectId: "nottscaving",
+    storageBucket: "nottscaving.appspot.com",
+    messagingSenderId: "713843150027",
+    appId: "1:713843150027:web:2e33e524118c835ddb1f4e"
   };
+
 
   // Initialize Firebase
   if (!firebase.apps.length) {
