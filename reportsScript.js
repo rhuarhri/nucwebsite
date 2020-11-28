@@ -1,5 +1,4 @@
 var firebaseConfig = {
-    apiKey: "AIzaSyDv{
     apiKey: "AIzaSyDEb8Nyte7l49VcaE8fhOXEoACrhxZwiGQ",
     authDomain: "nottscaving.firebaseapp.com",
     databaseURL: "https://nottscaving.firebaseio.com",
@@ -8,8 +7,6 @@ var firebaseConfig = {
     messagingSenderId: "713843150027",
     appId: "1:713843150027:web:2e33e524118c835ddb1f4e"
   };
-
-
   // Initialize Firebase
   if (!firebase.apps.length) {
      firebase.initializeApp(firebaseConfig);
